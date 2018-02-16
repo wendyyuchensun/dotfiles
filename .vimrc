@@ -26,4 +26,4 @@ inoremap <leader>t <C-r>=strftime("%b %d, %Y")<CR>
 
 " common
 inoremap jj <esc>
-inoremap jk <esc>:w<CR>i
+inoremap jk <esc>:w<CR>
