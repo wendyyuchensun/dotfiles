@@ -10,6 +10,7 @@ set backspace=indent,eol,start
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set wrap
 
 " operate
 let mapleader = ";"
@@ -26,4 +27,3 @@ inoremap <leader>t <C-r>=strftime("%b %d, %Y")<cr>
 
 " common
 inoremap jj <esc>
-inoremap jk <esc>:w<cr>
