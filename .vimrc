@@ -17,12 +17,13 @@ let mapleader = ";"
 " Shortcuts
 
 " .vimrc
-nnoremap <leader>en :vsp $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>en :vsp $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " insert current date under cursor, format: Feb 16, 2018
 " usually used after typing 'Latest updated at ' (mind the tailing white space)
-inoremap <leader>t <C-r>=strftime("%b %d, %Y")<cr>
+inoremap <leader>t <C-r>=strftime("%b %d, %Y")<CR>
 
 " common
 inoremap jj <esc>
+inoremap jk <esc>:w<CR>i
