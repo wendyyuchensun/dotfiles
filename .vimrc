@@ -1,3 +1,6 @@
+execute pathogen#infect()
+filetype plugin indent on
+
 colorscheme desert
 syntax on
 syntax enable
@@ -53,3 +56,16 @@ set statusline+=\ %F\
 set statusline+=%=
 set statusline+=%#statuslinelight#
 set statusline+=\ %l:%c\  
+
+" linting with ale
+let g:ale_linters = {
+\  'javascript': ['eslint'],
+\  'typescript': ['tslint'],
+\  'ruby': ['rubocop'],
+\  'scss': ['scsslint']
+\}
+
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_javascript_eslint_options  = '-c ~/work/linters/.eslintrc.json'
+let g:ale_ruby_rubocop_options = '-c ~/work/linters/.rubocop.yml'
+let g:ale_scss_scsslint_options = '-c ~/work/linters/.scss-lint.yml'
